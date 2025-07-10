@@ -65,13 +65,13 @@ aws s3 cp Inventory_Image s3://capstone2025inventory/ --recursive --quiet
 ### Training Progress
 
 #### Initial Training
-- **Parameters**: Learning rate = 0.001, Batch size = 32
+- **Parameters**: Learning rate = 0.001, Batch size = 32 with `train.py`
 - **Test Accuracy**: 29.3%
 - **Results**: Only one class (class 3) showed majority predictions falling in the correct class
 - **Confusion Matrix**: ![Initial Results](confusion_matrix1.png)
 
-#### Refined Training
-After analyzing the outputs and making adjustments (detailed in `sagemaker.ipynb`):
+#### Refined Training 
+After analyzing the outputs and making adjustments (detailed in `sagemaker.ipynb` and `train_improved.py`):
 - **Test Accuracy**: 37.9% (improved from 29.3%)
 - **Results**: Two classes now show majority predictions in correct classes
 - **Confusion Matrix**: ![Refined Results](confusion_matrix2.png)
@@ -131,7 +131,7 @@ The deployment pipeline includes:
 ### Endpoint Usage
 
 To query the deployed endpoint:
-!()[endpoint.png]
+![](endpoint.png)
 ```python
 from sagemaker.predictor import Predictor
 
