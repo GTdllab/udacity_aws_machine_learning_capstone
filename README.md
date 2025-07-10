@@ -101,7 +101,7 @@ hyperparameters = {
 #### Final Model Performance
 - **Test Accuracy**: 39.5% (improved from 37.9%)
 - **Results**: Three classes now show majority predictions in correct classes
-- **Confusion Matrix**: ![Final Results](confusion_matrix3.png)
+- **Confusion Matrix**: ![Tuning Results](confusion_matrix3.png)
 - **Hyperparameter Tuning Results**: ![Tuning Results](hyperparameter_tuning.png)
 
 ### Model Profiling
