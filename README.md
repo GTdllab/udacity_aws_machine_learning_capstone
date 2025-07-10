@@ -157,11 +157,3 @@ The project successfully demonstrated progressive improvement in model performan
 - **After hyperparameter tuning**: 39.5% accuracy
 
 The final model shows reasonable performance for object counting across multiple classes, with successful deployment to a SageMaker endpoint for real-time inference.
-
-## Files and Resources
-
-- `sagemaker.ipynb` - Main notebook with detailed implementation
-- `file_list.json` - Dataset file list
-- `inference.py` - Deployment inference script
-- `ProfilerReport/` - Model profiling results
-- Confusion matrices and tuning results (PNG files)
